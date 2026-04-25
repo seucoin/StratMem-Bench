@@ -21,10 +21,11 @@ Models are expected to generate responses based on these inputs.
 
 The dataset is stored as a JSON file:
 
-StratMemBench.json
+`StratMemBench.json`
 
 Each entry has the following structure:
 
+```json
 {
   "id": "unique_id",
   "query": "...",
@@ -48,6 +49,7 @@ Each entry has the following structure:
     "values": [...]
   }
 }
+```
 
 ---
 
@@ -78,7 +80,7 @@ A set of candidate memory items:
 - irr: irrelevant information
 
 Each memory item is a short factual statement:
-{"fact": "..."}
+`{"fact": "..."}`
 
 ### virtual_person_persona
 Describes the virtual character, including:
@@ -92,6 +94,7 @@ Describes the virtual character, including:
 
 ## 🧪 Example
 
+```json
 {
   "query": "When did you last go swimming with your kids?",
   "memory": {
@@ -104,6 +107,7 @@ Describes the virtual character, including:
     ]
   }
 }
+```
 
 ---
 
